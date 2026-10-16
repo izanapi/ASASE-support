@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="How to use ASASE studio. as an AUv3 generator in Logic Pro on Mac.">
+  <title>Use in Logic Pro · ASASE studio.</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="alternate" hreflang="ja" href="https://izanapi.github.io/ASASE-support/logic.html">
+</head>
+<body>
+  <header><a class="brand" href="index.html">ASASE <small>support</small></a><nav aria-label="Navigation"><a href="index.html">Support</a><a href="privacy.html">Privacy</a><a href="../logic.html" lang="ja">日本語</a></nav></header>
+  <main>
+    <h1>Use in Logic Pro</h1>
+    <p>ASASE studio. for Mac includes a standalone app and an AUv3 generator. There is no separate plug-in download. The screenshots below show Logic Pro in Japanese; the menu positions are the same in English.</p>
+    <section>
+      <h2>Get started</h2>
+      <ol>
+        <li>Install ASASE studio. on your Mac and open the standalone app once.</li>
+        <li>Open Logic Pro and create a Software Instrument track in an empty project.</li>
+        <li>Click the instrument slot in the inspector on the left. If another instrument is already loaded, click the right edge of its slot to open the selection menu. Press <code>I</code> if the inspector is hidden.</li>
+        <li>Choose <strong>AU Generators → ASASE → Asase Studio → Stereo</strong>. If “Asase Studio” appears under Recents, you can choose it there as well.</li>
+      </ol>
+      <p>ASASE generates sound on its own. You do not need MIDI notes. To play piano over it, add a separate instrument track.</p>
+      <figure class="menu-shot"><a href="../assets/logic-instrument-menu.png"><img src="../assets/logic-instrument-menu.png" alt="Logic Pro instrument menu showing AU Generators, ASASE, Asase Studio and Stereo" loading="lazy"></a><figcaption>The instrument slot menu. Open the image to enlarge it.</figcaption></figure>
+      <figure class="loaded-shot"><a href="../assets/logic-asase-loaded.png"><img src="../assets/logic-asase-loaded.png" alt="Logic Pro Software Instrument track with Asase Studio loaded and moving level meters" loading="lazy"></a><figcaption>Once loaded, the instrument slot shows “Asase Stud” on a narrow channel strip.</figcaption></figure>
+    </section>
+    <section>
+      <h2>If it does not appear</h2>
+      <p>Quit and reopen Logic Pro. Then open Logic Pro → Settings → Plug-in Manager, select the manufacturer “ASASE”, and look for <strong>Asase Studio</strong>. Check that it has a compatibility checkmark. If it is listed but absent from the instrument slot, select it and click “Reset &amp; Rescan Selection”.</p>
+      <p>You may see other plug-ins under the same manufacturer. Choose the one named “Asase Studio”.</p>
+      <figure><a href="../assets/logic-plugin-manager.png"><img src="../assets/logic-plugin-manager.png" alt="Logic Pro Plug-in Manager with ASASE selected and Asase Studio compatibility shown" loading="lazy"></a><figcaption>Plug-in Manager example. The version number may change after updates.</figcaption></figure>
+    </section>
+    <section>
+      <h2>Playback</h2>
+      <p>Use the ASASE window to change terrain, weather, key, scale and volume. Turn on “Sync to Logic / host” to follow Logic’s transport position and tempo. Save your Logic project and reopen it to check that audio and settings return.</p>
+      <p>If you need help, <a href="index.html#contact">contact support</a> with your Logic Pro and macOS versions, the Plug-in Manager status and steps to reproduce the issue.</p>
+    </section>
+  </main>
+  <footer><p>Updated: October 17, 2026 · Developer: <a href="https://github.com/izanapi">izanapi</a></p><a href="index.html">Back to support</a></footer>
+</body>
+</html>

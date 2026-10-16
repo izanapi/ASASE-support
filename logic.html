@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="ASASE studio.をMacのLogic ProでAUv3音源として使う手順。">
+  <title>Logic Proで使う · ASASE studio.</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="alternate" hreflang="en" href="https://izanapi.github.io/ASASE-support/en/logic.html">
+</head>
+<body>
+  <header><a class="brand" href="index.html">ASASE <small>support</small></a><nav aria-label="ナビゲーション"><a href="index.html">サポート</a><a href="privacy.html">プライバシー</a><a href="en/logic.html" lang="en">English</a></nav></header>
+  <main>
+    <h1>Logic Proで使う</h1>
+    <p>ASASE studio.のMac版には、単体アプリとAUv3音源が入っています。追加のプラグインをダウンロードする必要はありません。</p>
+    <section>
+      <h2>最初の設定</h2>
+      <ol>
+        <li>MacにASASE studio.をインストールし、単体アプリを一度起動します。</li>
+        <li>Logic Proを開き、空のプロジェクトで「ソフトウェア音源」トラックを作ります。</li>
+        <li>左のインスペクタにある音源スロットをクリックします。既に別の音源が入っている場合は、スロットの右端をクリックすると選択メニューが出ます。インスペクタが見えなければ <code>I</code> キーで表示します。</li>
+        <li><strong>AUジェネレータ → ASASE → Asase Studio → ステレオ</strong> を選びます。最近使った項目に「Asase Studio」があれば、そこからも選べます。</li>
+      </ol>
+      <p>ASASEは自分で音を作るジェネレーターです。MIDIノートを置かなくても演奏します。ピアノを重ねる場合は、別の音源トラックを作ってください。</p>
+      <figure class="menu-shot"><a href="assets/logic-instrument-menu.png"><img src="assets/logic-instrument-menu.png" alt="Logic Proの音源スロットでAUジェネレータ、ASASE、Asase Studio、ステレオを順に選ぶメニュー" loading="lazy"></a><figcaption>音源スロットの選択メニュー。画像を開くと拡大できます。</figcaption></figure>
+      <figure class="loaded-shot"><a href="assets/logic-asase-loaded.png"><img src="assets/logic-asase-loaded.png" alt="Logic Proのソフトウェア音源トラックにAsase Studioが入り、音量メーターが動いている画面" loading="lazy"></a><figcaption>読み込めると、左の音源スロットに「Asase Stud」と表示されます。</figcaption></figure>
+    </section>
+    <section>
+      <h2>見つからないとき</h2>
+      <p>Logic Proを一度終了して開き直してください。続けて「Logic Pro → 設定 → プラグインマネージャ」を開き、メーカー「ASASE」の <strong>Asase Studio</strong> を探します。名前の横に互換性のチェックが付いているか確認してください。表示されても音源スロットに出ない場合は、対象を選んで「選択項目をリセットして再スキャン」を押します。</p>
+      <p>同じメーカー名の別プラグインが見える場合があります。選ぶ名前は「Asase Studio」です。</p>
+      <figure><a href="assets/logic-plugin-manager.png"><img src="assets/logic-plugin-manager.png" alt="Logic ProのプラグインマネージャでメーカーASASEを選び、Asase Studioの互換性を確認する画面" loading="lazy"></a><figcaption>プラグインマネージャの例。版数は更新により変わります。</figcaption></figure>
+    </section>
+    <section>
+      <h2>演奏について</h2>
+      <p>ASASEの画面で地形、天気、キー、スケールや音量を調整できます。「Logic / ホストに同期」をオンにすると、Logicの再生位置とテンポに合わせます。設定後はLogicのプロジェクトを保存し、開き直して音と設定が戻るか確認してください。</p>
+      <p>うまく動かない場合は、<a href="index.html#contact">サポートへお問い合わせ</a>ください。Logic ProとmacOSの版数、プラグインマネージャの表示、再現手順を添えてください。</p>
+    </section>
+  </main>
+  <footer><p>更新日：2026年10月17日 · Developer: <a href="https://github.com/izanapi">izanapi</a></p><a href="index.html">サポートに戻る</a></footer>
+</body>
+</html>
